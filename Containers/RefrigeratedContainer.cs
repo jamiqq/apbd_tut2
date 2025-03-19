@@ -9,7 +9,7 @@ public class RefrigeratedContainer : Container
         : base(
             height, depth, tareWeight, maxPayload, 'C')
     {
-        if (TemperatureValidator.isValid(productType, maintainedTemperature))
+        if (TemperatureValidator.IsValid(productType, maintainedTemperature))
         {
             ProductType = productType;
             MaintainedTemperature = maintainedTemperature;
