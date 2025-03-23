@@ -2,12 +2,12 @@ using APBD_Task2.Enums;
 
 namespace APBD_Task2;
 
-public class TemperatureValidator
+public static class TemperatureValidator
 {
     public static bool IsValid(ProductType productType, double temperature)
     {
         var allowedTemperature = GetTemperature(productType);
-        return temperature >= allowedTemperature;
+        return temperature <= allowedTemperature;
     }
 
     public static double GetTemperature(ProductType productType)

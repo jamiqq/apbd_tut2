@@ -2,7 +2,7 @@ namespace APBD_Task2.Containers;
 
 public class GasContainer : HazardousContainer
 {   
-    protected GasContainer(
+    public GasContainer(
         double height, double depth, double tareWeight, double maxPayload, double pressure)
         : base(
             height, depth, tareWeight, maxPayload, 'G')

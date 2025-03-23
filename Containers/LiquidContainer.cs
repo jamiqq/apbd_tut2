@@ -3,7 +3,7 @@ namespace APBD_Task2.Containers;
 public class LiquidContainer : HazardousContainer
 {
     private readonly double _allowedPayLoad;
-    protected LiquidContainer(
+    public LiquidContainer(
         double height, double depth, double tareWeight, double maxPayload, bool isCargoHazardous)
         : base(
             height, depth, tareWeight, maxPayload, 'L')

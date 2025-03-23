@@ -5,7 +5,7 @@ namespace APBD_Task2.Containers;
 
 public abstract class HazardousContainer : Container, IHazardNotifier
 {
-    protected HazardousContainer(
+    public HazardousContainer(
         double height, double depth, double tareWeight, double maxPayload, char containerType)
         : base(
             height, depth, tareWeight, maxPayload, containerType)

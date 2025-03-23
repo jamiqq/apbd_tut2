@@ -4,8 +4,13 @@ namespace APBD_Task2.Containers;
 
 public class RefrigeratedContainer : Container
 {
-    protected RefrigeratedContainer(
-        double height, double depth, double tareWeight, double maxPayload, double maintainedTemperature, ProductType productType)
+    public RefrigeratedContainer(
+        double height, 
+        double depth, 
+        double tareWeight, 
+        double maxPayload, 
+        double maintainedTemperature, 
+        ProductType productType)
         : base(
             height, depth, tareWeight, maxPayload, 'C')
     {

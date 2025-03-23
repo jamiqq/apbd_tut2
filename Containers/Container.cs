@@ -25,7 +25,7 @@ public abstract class Container
     {
         if(mass <= 0 ) throw new ArgumentException("Mass must be greater than zero");
 
-        if (!CanLoadCargo(mass)) throw new ArgumentException("Cargo muss exceeds max payload");
+        if (!CanLoadCargo(mass)) throw new ArgumentException("Cargo mass exceeds max payload");
         
         CargoMass += mass;
     }
@@ -35,4 +35,9 @@ public abstract class Container
         CargoMass = 0;
     }
     protected virtual bool CanLoadCargo(double mass) => CargoMass + mass <= MaxPayload;
+
+    public void PrintInfo()
+    {
+        Console.WriteLine($"Serial Number: {SerialNumber}, Cargo Mass: {CargoMass}");
+    }
 }
